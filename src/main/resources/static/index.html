@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .kotak_form{
+                width: 300px;
+                background: white;
+                margin: 80px auto;
+                padding: 30px 20px;
+                background-color: cyan;
+                box-shadow: 5px 5px 5px lightblue;
+            }
+            .form_login{
+                margin-left: 5px;
+                box-sizing : border-box;
+                width: 100%;
+                padding: 10px;
+                font-size: 11pt;
+                margin-bottom: 10px;
+            }
+            .form_file{
+                padding: 10px;
+                align-content: center;
+            }
+            .tombol_login{
+                margin-left: 5px;
+                background: darkblue;
+                color: white;
+                font-size: 11pt;
+                width: 100%;
+                border: none;
+                border-radius: 3px;
+                padding: 10px 20px;
+            }
+            .file {
+                display: inline-block;
+                width: 100%;
+                padding: 120px 0 0 0;
+                height: 50px;
+                overflow: hidden;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat white;
+                border-radius: 20px;
+                background-size: 60px 60px;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="kotak_form">
+            <h3 style="text-align: center" >Takehome1</h3>
+            <form method="post" action="/viewpage" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td><input type="text" name="name" class="form_login" placeholder="nama"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="location" class="form_login" placeholder="lokasi"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form_login">
+                            <input type="file" accept="image/jpg" name="imge" class="file">
+                        </div>
+                    </td>
+                </tr>
+                <tr>    
+                    <td><button type="submit" class="tombol_login"> SAVE </button></td>
+                </tr>
+                
+                </table>
+            </form>
+        </div>
+        
+    </body>
+</html>

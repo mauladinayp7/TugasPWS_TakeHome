@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            .image{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                box-shadow: 5px 5px 5px gray;
+            }
+            .center{
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <h1>HEALING</h1>
+            <h2 th:text="${nm}"></h2>
+            <h2 th:text="${lcn}"></h2>
+        </div>
+        <img th:src="${imgs}" class="image"/>
+        
+    </body>
+</html>
